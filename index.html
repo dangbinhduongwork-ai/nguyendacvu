@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Đắc Vũ | Kỹ Sư Thực Phẩm - 3D Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BACKGROUND 3D CANVAS -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-sym">NDV</span>
+                <span class="logo-text">FOOD TECH</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">HOME</a>
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#education" class="nav-link">EDUCATION</a>
+                <a href="#experience" class="nav-link">EXPERIENCE</a>
+                <a href="#achievements" class="nav-link">ACHIEVEMENTS</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#languages" class="nav-link">LANGUAGES</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge">FUTURISTIC 3D FOOD TECH PORTFOLIO</div>
+                    <h1 class="hero-name">NGUYỄN ĐẮC VŨ</h1>
+                    <h2 class="hero-title">KỸ SƯ THỰC PHẨM</h2>
+                    <p class="hero-tagline">Food Technology | F&B | Quality Control | R&D</p>
+                    <p class="hero-desc">
+                        Chuyên viên kiểm soát chất lượng món ăn (Food Checking) và quy trình phục vụ chuẩn SOP, tối ưu hóa R&D và vận hành ẩm thực chuẩn xác.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#about" class="btn btn-primary">XEM CV</a>
+                        <a href="#experience" class="btn btn-outline">KINH NGHIỆM</a>
+                        <a href="#contact" class="btn btn-glow">LIÊN HỆ</a>
+                    </div>
+                </div>
+
+                <!-- 3D AVATAR & KINETIC MOLECULAR SYSTEM -->
+                <div class="hero-3d-wrapper">
+                    <div class="avatar-3d-container tilt-card">
+                        <!-- Holographic Ring & Laser Scanner -->
+                        <div class="avatar-holo-ring"></div>
+                        <div class="avatar-scan-line"></div>
+                        
+                        <!-- 3D Orbiting Rings -->
+                        <div class="orbit-ring ring-1">
+                            <span class="electron"></span>
+                        </div>
+                        <div class="orbit-ring ring-2">
+                            <span class="electron"></span>
+                        </div>
+                        <div class="orbit-ring ring-3">
+                            <span class="electron"></span>
+                        </div>
+
+                        <!-- Main Avatar Frame -->
+                        <div class="avatar-frame">
+                            <!-- Bạn chỉ cần thay đường dẫn avatar.jpg của mình vào đây -->
+                            <img src="avatar.jpg" alt="Nguyễn Đắc Vũ - Kỹ Sư Thực Phẩm" class="avatar-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 240 240\' fill=\'%23060e22\'><rect width=\'240\' height=\'240\' fill=\'%23091530\'/><circle cx=\'120\' cy=\'95\' r=\'45\' fill=\'%2300f2fe\' opacity=\'0.8\'/><path d=\'M50 205 C50 155 190 155 190 205 Z\' fill=\'%234facfe\' opacity=\'0.8\'/><circle cx=\'120\' cy=\'95\' r=\'40\' fill=\'%23060e22\'/><path d=\'M60 205 C60 165 180 165 180 205 Z\' fill=\'%23060e22\'/><text x=\'120\' y=\'105\' font-size=\'32\' font-weight=\'bold\' fill=\'%2300f2fe\' text-anchor=\'middle\' font-family=\'sans-serif\'>NDV</text></svg>';">
+                            <div class="avatar-overlay-glow"></div>
+                        </div>
+
+                        <!-- Status Tech Tag -->
+                        <div class="avatar-tech-badge">
+                            <span class="badge-dot"></span> QA-QC & R&D ACTIVE
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator">
+                <div class="mouse-icon"></div>
+                <span>SCROLL KHÁM PHÁ</span>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">TỔNG QUAN</span>
+                    <h2 class="section-title">GIỚI THIỆU</h2>
+                </div>
+                <div class="about-card glassmorphism-card tilt-card reveal">
+                    <div class="card-glow-edge"></div>
+                    <div class="about-grid">
+                        <div class="about-profile-col">
+                            <div class="about-avatar-mini">
+                                <img src="avatar.jpg" alt="Nguyễn Đắc Vũ" class="mini-avatar-img" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\' fill=\'%23060e22\'><circle cx=\'50\' cy=\'50\' r=\'50\' fill=\'%23091530\'/><text x=\'50\' y=\'58\' font-size=\'22\' font-weight=\'bold\' fill=\'%2300f2fe\' text-anchor=\'middle\' font-family=\'sans-serif\'>NDV</text></svg>';">
+                                <div class="mini-avatar-status"></div>
+                            </div>
+                            <h3 class="about-name-highlight">NGUYỄN ĐẮC VŨ</h3>
+                            <p class="about-role">Food Technologist & Operations Specialist</p>
+                            <p class="about-text">
+                                Nhân viên ngành F&B với kinh nghiệm đầy đặn trong việc kiểm soát chất lượng món ăn <strong>(Food Checking)</strong>, quản lý quy trình phục vụ và duy trì tiêu chuẩn <strong>SOP</strong> tại các chuỗi nhà hàng cao cấp.
+                            </p>
+                            <p class="about-text">
+                                Có khả năng phối hợp hiệu quả giữa bộ phận Bếp và Phục vụ, duy trì thời gian ra đồ tối ưu và đảm bảo <strong>100% tính chính xác</strong> theo yêu cầu khắt khe của khách hàng.
+                            </p>
+                        </div>
+                        <div class="about-metrics">
+                            <div class="metric-box">
+                                <div class="metric-val">100%</div>
+                                <div class="metric-lbl">Chất lượng & SOP</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val">&lt; 15'</div>
+                                <div class="metric-lbl">Thời gian ra món</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val">Giải Ba</div>
+                                <div class="metric-lbl">Cuộc thi làm bánh R&D</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-val">2023-27</div>
+                                <div class="metric-lbl">Food Tech Đại Học</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">HỌC VẤN CHUYÊN NGÀNH</span>
+                    <h2 class="section-title">EDUCATION</h2>
+                </div>
+                <div class="education-timeline-wrapper reveal">
+                    <div class="edu-timeline-line"></div>
+                    <div class="edu-node node-start">
+                        <span class="node-year">2023</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                    
+                    <div class="edu-card glassmorphism-card tilt-card">
+                        <div class="edu-tag">HỌC VẤN CHÍNH QUY</div>
+                        <h3 class="edu-school">TRƯỜNG ĐẠI HỌC KINH TẾ - KỸ THUẬT CÔNG NGHIỆP</h3>
+                        <h4 class="edu-major">FOOD TECHNOLOGY</h4>
+                        <div class="edu-period">Niên khóa: 2023 - 2027</div>
+                        <p class="edu-desc">
+                            Đào tạo chuyên sâu về Hóa sinh thực phẩm, Vi sinh vật học thực phẩm, Quản trị kiểm soát chất lượng (QA/QC), Kỹ thuật chế biến, An toàn thực phẩm và Nghiên cứu & Phát triển sản phẩm (R&D).
+                        </p>
+                    </div>
+
+                    <div class="edu-node node-end">
+                        <span class="node-year">2027</span>
+                        <div class="node-pulse"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">KINH NGHIỆM LÀM VIỆC</span>
+                    <h2 class="section-title">EXPERIENCE</h2>
+                </div>
+                <div class="experience-block reveal">
+                    <div class="exp-header glassmorphism-card">
+                        <div class="exp-time-badge">07/2023</div>
+                        <h3 class="exp-role">FOOD CHECKER / FOOD EXPEDITOR</h3>
+                        <h4 class="exp-company">(EXPO) BOAN KHANG</h4>
+                    </div>
+
+                    <div class="exp-tasks">
+                        <div class="task-card glassmorphism-card tilt-card reveal">
+                            <div class="task-number">01</div>
+                            <div class="task-body">
+                                <h5>KIỂM SOÁT CHẤT LƯỢNG & ĐỊNH LƯỢNG</h5>
+                                <p>Kiểm soát chất lượng, định lượng và hình thức trình bày của 100% món ăn trước khi phục vụ cho khách hàng, đảm bảo tuân thủ nghiêm ngặt tiêu chuẩn (SOP) của chuỗi.</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card glassmorphism-card tilt-card reveal">
+                            <div class="task-number">02</div>
+                            <div class="task-body">
+                                <h5>ĐỐI CHIẾU ORDER & YÊU CẦU ĐẶC BIỆT</h5>
+                                <p>Đối chiếu order ticket với thành phẩm, đảm bảo chính xác các yêu cầu riêng biệt của khách (dị ứng, chế độ ăn kiêng, gia vị tùy chỉnh).</p>
+                            </div>
+                        </div>
+
+                        <div class="task-card glassmorphism-card tilt-card reveal">
+                            <div class="task-number">03</div>
+                            <div class="task-body">
+                                <h5>ĐIỀU PHỐI VẬN HÀNH BẾP - PHỤC VỤ</h5>
+                                <p>Điều phối luồng ra đồ giữa Bếp và bộ phận Phục vụ, duy trì thời gian ra món trung bình dưới 15 phút, tối ưu luồng vận hành F&B.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACHIEVEMENTS SECTION -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">GIẢI THƯỞNG & THÀNH TỰU</span>
+                    <h2 class="section-title">ACHIEVEMENTS</h2>
+                </div>
+                <div class="achieve-card-large glassmorphism-card tilt-card reveal">
+                    <div class="card-glow-corner"></div>
+                    <div class="achieve-banner">
+                        <div class="achieve-date">05/2025</div>
+                        <div class="achieve-badge">GIẢI BA CHUNG CUỘC</div>
+                    </div>
+                    <h3 class="achieve-title">CUỘC THI LÀM BÁNH</h3>
+                    <h2 class="achieve-contest-name">"NGỌT NGÀO HƯƠNG VỊ YÊU THƯƠNG"</h2>
+                    <h4 class="achieve-sub">THÍ SINH CUỘC THI LÀM BÁNH</h4>
+
+                    <div class="achieve-tags">
+                        <span class="achieve-tag">R&D</span>
+                        <span class="achieve-tag">Food Safety</span>
+                        <span class="achieve-tag">Plating Chuẩn Xác</span>
+                        <span class="achieve-tag">60 Phút Áp Lực</span>
+                        <span class="achieve-tag">Giải Ba Hình Thức</span>
+                    </div>
+
+                    <div class="achieve-details">
+                        <div class="achieve-item">
+                            <div class="achieve-bullet"></div>
+                            <p><strong>Nghiên cứu và phát triển (R&D)</strong> công thức bánh ngọt sáng tạo, tối ưu hóa hương vị, kết cấu và kéo dài thời gian bảo quản (shelf-life) đi kèm tuân thủ tiêu chuẩn an toàn thực phẩm.</p>
+                        </div>
+                        <div class="achieve-item">
+                            <div class="achieve-bullet"></div>
+                            <p><strong>Xây dựng quy trình trang trí</strong>, kiểm soát định lượng và hình thức trình bày bánh (plating) chuẩn xác theo tiêu chí cuộc thi dưới áp lực thời gian (60 phút).</p>
+                        </div>
+                        <div class="achieve-item">
+                            <div class="achieve-bullet"></div>
+                            <p><strong>Đạt giải Ba</strong>, Giải Bánh có hình thức ấn tượng nhờ sự kết hợp hài hòa giữa hương vị và câu chuyện truyền tải cảm xúc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">NĂNG LỰC CHUYÊN MÔN</span>
+                    <h2 class="section-title">SKILLS</h2>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">🧪</div>
+                        <h3>FOOD TECHNOLOGY</h3>
+                        <p>Công nghệ chế biến, hóa học và vi sinh thực phẩm ứng dụng.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">🛡️</div>
+                        <h3>FOOD SAFETY</h3>
+                        <p>Vệ sinh an toàn thực phẩm, HACCP và kiểm dịch nguyên liệu.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">⚖️</div>
+                        <h3>QUALITY CONTROL</h3>
+                        <p>Kiểm tra chất lượng thành phẩm, nguyên liệu và định lượng chuẩn.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">🔍</div>
+                        <h3>FOOD CHECKING</h3>
+                        <p>Kiểm duyệt 100% hình thức và định lượng trước khi đến bàn khách.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">⚡</div>
+                        <h3>FOOD EXPEDITOR</h3>
+                        <p>Điều phối nhịp nhàng luồng món giữa Bếp và Phục vụ dưới 15 phút.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">🔬</div>
+                        <h3>R&D</h3>
+                        <p>Nghiên cứu phát triển công thức, tối ưu texture & shelf-life.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">📋</div>
+                        <h3>SOP</h3>
+                        <p>Xây dựng và tuân thủ quy trình chuẩn vận hành nhà hàng F&B.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">🎨</div>
+                        <h3>PLATING</h3>
+                        <p>Kỹ thuật trang trí và trình bày món ăn tinh tế, đạt chuẩn thẩm mỹ.</p>
+                    </div>
+                    <div class="skill-card glassmorphism-card tilt-card reveal">
+                        <div class="skill-icon">🍽️</div>
+                        <h3>F&B OPERATION</h3>
+                        <p>Vận hành ẩm thực, kết nối linh hoạt giữa các bộ phận nhà hàng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANGUAGES SECTION -->
+        <section id="languages" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">NGOẠI NGỮ</span>
+                    <h2 class="section-title">LANGUAGES</h2>
+                </div>
+                <div class="languages-grid">
+                    <div class="lang-card glassmorphism-card tilt-card reveal">
+                        <div class="lang-flag">🇻🇳</div>
+                        <h3 class="lang-title">TIẾNG VIỆT</h3>
+                        <p class="lang-level">Bản xứ (Native)</p>
+                        <div class="lang-bar"><span style="width: 100%;"></span></div>
+                        <p class="lang-desc">Giao tiếp lưu loát, truyền đạt chính xác quy chuẩn và điều phối nhóm hiệu quả.</p>
+                    </div>
+                    <div class="lang-card glassmorphism-card tilt-card reveal">
+                        <div class="lang-flag">🇬🇧</div>
+                        <h3 class="lang-title">TIẾNG ANH</h3>
+                        <p class="lang-level">Chuyên ngành & Giao tiếp</p>
+                        <div class="lang-bar"><span style="width: 80%;"></span></div>
+                        <p class="lang-desc">Đọc hiểu tài liệu chuyên ngành Food Science, SOP quốc tế và giao tiếp dịch vụ.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-subtitle">KẾT NỐI HỢP TÁC</span>
+                    <h2 class="section-title">LET'S WORK TOGETHER</h2>
+                </div>
+                <div class="contact-card glassmorphism-card tilt-card reveal">
+                    <p class="contact-lead">
+                        Sẵn sàng mang chuyên môn Food Technology, sự tỉ mỉ trong Quality Control và tinh thần R&D đổi mới vào chuỗi nhà hàng hoặc doanh nghiệp thực phẩm của bạn.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-lbl">ỨNG VIÊN:</span>
+                            <span class="contact-val">NGUYỄN ĐẮC VŨ</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-lbl">VỊ TRÍ:</span>
+                            <span class="contact-val">KỸ SƯ THỰC PHẨM / FOOD EXPEDITOR / QA-QC</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-lbl">HỌC VẤN:</span>
+                            <span class="contact-val">Food Technology - ĐH Kinh tế Kỹ thuật Công nghiệp</span>
+                        </div>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="tel:+84900000000" class="btn btn-primary btn-large">
+                            <span>📞</span> CALL NGAY
+                        </a>
+                        <a href="mailto:nguyendacvu.foodtech@gmail.com" class="btn btn-glow btn-large">
+                            <span>✉️</span> GỬI EMAIL
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 NGUYỄN ĐẮC VŨ — KỸ SƯ THỰC PHẨM. ALL RIGHTS RESERVED.</p>
+            <p class="footer-sub">Designed with Pure HTML5, CSS3 3D & Vanilla JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
